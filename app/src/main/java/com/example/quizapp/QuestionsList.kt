@@ -41,6 +41,11 @@ class QuestionsList : AppCompatActivity() {
         progressBar?.progress=currentPosition
         tvProgress?.text="$currentPosition/${progressBar?.max}"
         tvQuestion?.text=question.question
+        tvOp1?.text=question.op1
+        tvOp2?.text=question.op2
+        tvOp3?.text=question.op3
+        tvOp4?.text=question.op4
+        tvImage?.setImageResource(question.image)
         val btn:Button =findViewById(R.id.submit)
         btn.setOnClickListener {
             if(currentPosition==progressBar?.max){
@@ -53,6 +58,11 @@ class QuestionsList : AppCompatActivity() {
             progressBar?.progress=currentPosition
             tvProgress?.text="$currentPosition/${progressBar?.max}"
             tvQuestion?.text=question.question
+                tvOp1?.text=question.op1
+                tvOp2?.text=question.op2
+                tvOp3?.text=question.op3
+                tvOp4?.text=question.op4
+                tvImage?.setImageResource(question.image)
             }
         }
     }
