@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
             }
             else{
                 val intent=Intent(this,QuestionsList::class.java)
+                intent.putExtra(Constants.USER_NAME,tx.text.toString())
                 startActivity(intent)
                 finish()
             }
